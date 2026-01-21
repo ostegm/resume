@@ -157,6 +157,16 @@ header {
   align-items: center;
 }
 
+.contact-text {
+  display: flex;
+  align-items: center;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+}
+
 .contact a {
   color: var(--color-text-secondary);
 }
@@ -168,6 +178,26 @@ header {
 .separator {
   color: var(--color-border);
   margin: 0 0.35rem;
+}
+
+/* Icon styles */
+.link-icon {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.link-text {
+  display: none;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-only {
+  display: inline;
 }
 
 /* Print-only elements hidden on web */
@@ -498,14 +528,65 @@ header {
 
   header {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .tagline {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-text {
+    justify-content: center;
+  }
+
+  .contact-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition);
+  }
+
+  .contact-link:hover {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent);
   }
 
   .download-btn {
+    margin-top: 1rem;
+    width: 100%;
     justify-content: center;
   }
 
   .job-header {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
@@ -582,10 +663,37 @@ header {
     font-size: 9pt;
     text-align: center;
     margin-top: 0.15rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-text,
+  .contact-links {
+    display: inline;
   }
 
   .separator {
     margin: 0 0.3rem;
+  }
+
+  .desktop-only {
+    display: inline !important;
+  }
+
+  .link-text {
+    display: inline !important;
+  }
+
+  .link-icon {
+    display: none !important;
+  }
+
+  .contact-link {
+    background: transparent !important;
+    border: none !important;
+    width: auto !important;
+    height: auto !important;
   }
 
   /* Show print-only elements */
