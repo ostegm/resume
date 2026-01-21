@@ -693,6 +693,7 @@ header {
   }
 
   .contact-link {
+    display: inline !important;
     background: transparent !important;
     border: none !important;
     width: auto !important;
