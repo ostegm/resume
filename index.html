@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otto Stegmaier - AI Engineer & Applied Researcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>Otto Stegmaier</h1>
+        <p class="tagline">AI Engineer & Applied Researcher</p>
+        <div class="contact">
+          <a href="mailto:o.stegmaier@gmail.com">o.stegmaier@gmail.com</a>
+          <span class="separator">·</span>
+          <span>563-340-2090</span>
+          <span class="separator">·</span>
+          <a href="https://github.com/ostegm" class="contact-link">GitHub</a>
+          <span class="separator">·</span>
+          <a href="https://www.linkedin.com/in/ottostegmaier/" class="contact-link">LinkedIn</a>
+          <span class="separator print-only">·</span>
+          <a href="https://ostegm.github.io/resume" class="print-only portfolio-link">ostegm.github.io/resume</a>
+        </div>
+      </div>
+      <button class="download-btn" onclick="window.print()">
+        <span class="download-icon">↓</span> PDF
+      </button>
+    </header>
+
+    <section id="summary" class="summary">
+      <p>Staff engineer with 8 years at Google translating research into production ML—shipping systems to hundreds of millions of users. Comfortable working at the edge of what's possible, focused on making it reliable. Now building production AI agents as an independent consultant.</p>
+    </section>
+
+    <main>
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <article class="job accordion">
+          <div class="job-header accordion-trigger" aria-expanded="true">
+            <div class="job-title">
+              <h3>Cloudripper Labs</h3>
+              <span class="role">Independent AI Consultant</span>
+            </div>
+            <div class="job-meta">
+              <span class="dates">2025 - Present</span>
+              <span class="location">Salt Lake City</span>
+            </div>
+            <span class="accordion-icon"></span>
+            <p class="job-preview">Building and deploying production AI agents. Training engineering teams on agent-first development.</p>
+          </div>
+          <div class="accordion-content" style="max-height: none;">
+            <p class="job-summary">Building and deploying production AI agents. Training engineering teams on agent-first development practices.</p>
+            <ul>
+              <li><strong>Enterprise SaaS agent:</strong> Deployed customer-facing agent augmenting a company's existing SaaS apps—reducing training requirements and enabling cross-API workflows previously impossible without manual copy-paste between systems.</li>
+              <li><strong>Autonomous route planning agent:</strong> Tool-calling agent that generates tactical movement scripts for military ground vehicles from natural language. Built closed-loop evaluation environment where the agent iteratively improved its own prompts and tooling against simulation-based test suites.</li>
+              <li><strong>Streamlining Devops with Compound Engineering:</strong> Built company-specific skills plugin for AWS deployments and API testing. Trained engineering teams on agent-supervised workflows—reduced monthly release process from days of manual work to hours of low-touch agent supervision.</li>
+              <li><strong>Agentic Kalshi Trading System:</strong> Semi-autonomous trading system using Claude Agents SDK with Modal sandboxes. Slack integration enables async multi-player oversight. Executes strategies not feasible in the webapp—trading on AI-computed signals like game momentum and news sentiment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job accordion">
+          <div class="job-header accordion-trigger" aria-expanded="false">
+            <div class="job-title">
+              <h3>Google</h3>
+              <span class="role">Staff Software Engineer</span>
+            </div>
+            <div class="job-meta">
+              <span class="dates">2017 - 2025</span>
+              <span class="location">SF & Salt Lake City</span>
+            </div>
+            <span class="accordion-icon"></span>
+            <p class="job-preview">Eight years shipping ML to production—from early embeddings and BERT inference to T5-based query rewriting and tool calling voice agents. Bridged research and product teams across Legal, Cloud, YouTube, and Conversational AI.</p>
+          </div>
+          <div class="accordion-content">
+
+            <div class="subrole">
+              <h4>Conversational Agents & Food AI</h4>
+              <p class="job-summary">Built voice ordering agent before modern multimodal LLMs—scaled from 1 pilot restaurant to hundreds across major fast food chains. Pioneered tool-calling patterns that predated structured output APIs.</p>
+              <ul>
+                <li>Led migration to native Gemini 2.0 tool use—validating patterns we'd built years earlier before structured outputs existed.</li>
+                <li>Designed Gemini-based pipeline for cleaning audio training data to improve ASR quality.</li>
+                <li>"Disfluency injection" system to mask LLM latency—injected natural hesitations during inference, trimmed silence during agent speech.</li>
+                <li>Built human eval system for accent conversion models with bias reduction analysis.</li>
+              </ul>
+            </div>
+
+            <div class="subrole">
+              <h4>Google Research — YouTube Voice Search</h4>
+              <p class="job-summary">Bridged Google Research and YouTube product teams. Shipped 8 launches using T5 transformers for voice query rewriting—+0.75% Voice Engaged Watchers (30% of YouTube's annual goal).</p>
+              <ul>
+                <li>Fine-tuned LLM for phonetic query corrections using contextual signals and personalization.</li>
+                <li>In-memory ranking model for candidate selection. Inference latency &lt;3ms.</li>
+                <li>First personalized ASR rewriter on YouTube—85% click rate on corrections, scaled to 450M queries/day.</li>
+                <li>Led planning and coordination for 5 engineers across 3 reporting chains.</li>
+              </ul>
+            </div>
+
+            <div class="subrole">
+              <h4>Area120 & Google Cloud</h4>
+              <p class="job-summary">Early BERT adopter—built training and serving infrastructure for conversational AI that won major telco contract. Solved low-latency inference challenges before optimized transformer runtimes existed.</p>
+              <ul>
+                <li>Led 4 engineers building automated hyperparameter tuning system.</li>
+                <li>BERT serving at &lt;20ms p99 latency with TPU support.</li>
+                <li>Multi-headed model architecture reduced TPU cost 10x.</li>
+              </ul>
+            </div>
+
+            <div class="subrole">
+              <h4>Google Legal — Data Scientist</h4>
+              <p class="job-summary">Early adopter of embeddings for legal tech. Fine-tuned word2vec models on patent text before transformer-based embeddings existed.</p>
+              <ul>
+                <li>ML model for patent claim breadth prediction—replaced vendor, open-sourced the approach. Served 20M+ documents.</li>
+                <li>Patent similarity search via custom-trained embeddings + BigQuery. 60% reduction in search effort.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job accordion">
+          <div class="job-header accordion-trigger" aria-expanded="false">
+            <div class="job-title">
+              <h3>Fitbit</h3>
+              <span class="role">Senior Data Scientist</span>
+            </div>
+            <div class="job-meta">
+              <span class="dates">2016 - 2017</span>
+              <span class="location">San Francisco</span>
+            </div>
+            <span class="accordion-icon"></span>
+            <p class="job-preview">A/B testing and churn prediction for health tracking features.</p>
+          </div>
+          <div class="accordion-content">
+            <p class="job-summary">A/B testing and churn prediction for health tracking features.</p>
+            <ul>
+              <li>A/B test design and analytics for new dashboard and goal-setting features.</li>
+              <li>Churn prediction model balancing interpretability with calibration. Led intervention experiments.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job accordion">
+          <div class="job-header accordion-trigger" aria-expanded="false">
+            <div class="job-title">
+              <h3>Liftopia</h3>
+              <span class="role">Data Scientist & Team Lead</span>
+            </div>
+            <div class="job-meta">
+              <span class="dates">2014 - 2016</span>
+              <span class="location">San Francisco</span>
+            </div>
+            <span class="accordion-icon"></span>
+            <p class="job-preview">First data scientist. Collaborative filtering and early ML for ski ticket pricing.</p>
+          </div>
+          <div class="accordion-content">
+            <p class="job-summary">First data scientist at the company. Built tooling to understand ski lift ticket shopper behavior using collaborative filtering and early ML techniques.</p>
+            <ul>
+              <li>Built and led 4-person analytics team covering pricing optimization, product analytics, and forecasting.</li>
+              <li>Designed first data warehouse (Redshift) with daily Python ETL pipelines.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job accordion">
+          <div class="job-header accordion-trigger" aria-expanded="false">
+            <div class="job-title">
+              <h3>US Marine Corps</h3>
+              <span class="role">Infantry Officer</span>
+            </div>
+            <div class="job-meta">
+              <span class="dates">2008 - 2013</span>
+              <span class="location">USA & Afghanistan</span>
+            </div>
+            <span class="accordion-icon"></span>
+            <p class="job-preview">Led teams under uncertainty. Combat deployment. Mission-driven work with bias for action.</p>
+          </div>
+          <div class="accordion-content">
+            <p class="job-summary">Led teams under uncertainty in high-stakes environments. Combat deployment to Afghanistan. Mission-driven work with bias for action.</p>
+            <ul>
+              <li>Designed 11-month training program for 165 marines deploying to Afghanistan. Every marine came home.</li>
+              <li>Led combat operations team for casualty evacuations and close air support—decisions under pressure with incomplete information.</li>
+              <li>Managed teams of 5-45 across training and two deployments.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="publications">
+        <h2>Publications & Open Source</h2>
+
+        <article class="publication">
+          <h3>Contextual Mondegreen <span class="pub-year">2022</span></h3>
+          <p>Early production LLM application—rewrote international voice queries (voice → ASR → LLM rewrite) to correct phonetic errors across languages. Personalized precision for different user populations.</p>
+          <a href="https://baylearn-org.github.io/www/2022/submissions.html" class="pub-link">BayLearn 2022 →</a>
+        </article>
+
+        <article class="publication">
+          <h3>Patent Claims Breadth Model <span class="pub-year">2018</span></h3>
+          <p>Early embeddings application—fine-tuned word2vec model on patent text to predict claim breadth. First open-source model in this space. Widely cited, many follow-on projects.</p>
+          <a href="https://github.com/google/patents-public-data/tree/master/models/claim_breadth" class="pub-link">GitHub →</a>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+          <article class="education-item">
+            <h3>Harvard University</h3>
+            <p>B.A. Economics · Spanish · Varsity Heavyweight Rowing</p>
+          </article>
+          <article class="education-item">
+            <h3>Fast.ai</h3>
+            <p>Practical Deep Learning for Coders (2017)</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+          <h3>Level App <span class="project-tag">AI for Construction</span></h3>
+          <p>Full-stack AI app for renovation estimates via multimodal input (images, voice, video, PDFs). Novel video processing pipeline. Patterns now used in consulting work.</p>
+          <div class="project-links">
+            <a href="https://github.com/ostegm/contractor-app">Code →</a>
+            <a href="https://contractor-app-web.vercel.app/login">Demo →</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="interests">
+        <h2>Interests</h2>
+        <p class="interests-list">Cooking · Calesthenics · Backcountry Skiing · Hiking · Bread Baking · Fiction</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        const accordion = this.parentElement;
+        const content = accordion.querySelector('.accordion-content');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+        // Toggle current
+        this.setAttribute('aria-expanded', !isExpanded);
+
+        if (isExpanded) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Initialize: set max-height for expanded items
+    document.querySelectorAll('.accordion-trigger[aria-expanded="true"]').forEach(trigger => {
+      const content = trigger.parentElement.querySelector('.accordion-content');
+      content.style.maxHeight = content.scrollHeight + 'px';
+    });
+  </script>
+</body>
+</html>
